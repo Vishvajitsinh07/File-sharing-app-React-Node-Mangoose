@@ -1,0 +1,37 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/styles.css">
+    <title>Upload File</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload File</h1>
+
+        <!-- Upload Form -->
+        <form action="/upload?username=<%= username %>" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" required><br><br>
+            <button type="submit">Upload File</button>
+        </form>
+
+        <!-- Add a logout button -->
+        <form action="/logout" method="POST">
+            <button type="submit">Logout</button>
+        </form>
+
+        <!-- Display success or error messages -->
+        <script>
+            const queryParams = new URLSearchParams(window.location.search);
+            const error = queryParams.get('error');
+            const success = queryParams.get('success');
+
+            if (error) {
+                alert(error);  // Show error popup
+            }
+
+            if (success) {
+                alert(success);  // Show success popup
+            }
+        </script>
+    </div>
+</body>
+</html>

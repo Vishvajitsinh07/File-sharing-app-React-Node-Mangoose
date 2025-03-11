@@ -1,0 +1,66 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #F0F4F8; /* Light background */
+}
+
+h1, h2 {
+    color: #2B2D42; /* Dark gray for headings */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+button {
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #8D99AE; /* Soft gray border */
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus {
+    border-color: #EF233C; /* Focus border color */
+}
+
+button {
+    background-color: #EF233C; /* Vibrant red */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #D90429; /* Darker red on hover */
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    color: white;
+    background-color: #00BFFF; /* Bright blue */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #007BBF; /* Darker blue on hover */
+}
+
+.error {
+    color: #EF233C; /* Red for error messages */
+    font-weight: bold;
+}
